@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>ligne Bleu SVG</title>
+</head>
+<body>
+<svg >
+  <circle cx="100" cy="100" r="40" fill="#afa1d5">
+<animate attributeType="XML"
+attributeName="cx"
+from="-40" to="1500"
+dur="0.1s"
+repeatCount="indefinite"/>
+<animate attributeType="XML"
+attributeName="fill"
+from="#afa1d5" to="#055fff"
+dur="0.1s"
+repeatCount="indefinite"/>
+</circle>
+</svg>
+</body>
+</html>
