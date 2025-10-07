@@ -8,7 +8,7 @@ int main() {
  ;
 
     // Création du fichier HTML
-    FILE *f = fopen("circle.html", "w");
+    FILE *f = fopen("circle.html", "r");
     if (f == NULL) {
         perror("Erreur lors de la création du fichier");
         return 1;
