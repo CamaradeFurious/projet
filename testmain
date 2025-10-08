@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct menu_s {
+    int create;
+    int cut;
+    int view;
+    int modif;
+    int restart;
+    int stop;
+} menu_t;
+
+void afficher_menu() {
+    printf("\n======= MENU PRINCIPAL =======\n");
+    printf("1 - Créer une forme\n");
+    printf("2 - Supprimer les formes\n");
+    printf("3 - Afficher les formes\n");
+    printf("4 - Modifier les formes\n");
+    printf("5 - Revenir à zéro\n");
+    printf("0 - Quitter\n");
+    printf("Choix : ");
+}
+
+void creer_forme() {
+    int choix_forme;
+    printf("\n--- Menu Création de Forme ---\n");
+    printf("1 - Cercle\n");
+    printf("2 - Carré\n");
+    printf("3 - Triangle\n");
+    printf("4 - Rectangle\n");
+    printf("Choix : ");
+    scanf("%d", &choix_forme);
+
+    switch (choix_forme) {
+        case 1:
+            printf("Vous avez choisi de créer un Cercle.\n");
+            break;
+        case 2:
+            printf("Vous avez choisi de créer un Carré.\n");
+            break;
+        case 3:
+            printf("Vous avez choisi de créer un Triangle.\n");
+            break;
+        case 4:
+            printf("Vous avez choisi de créer un Rectangle.\n");
+            break;
+        default:
+            printf("Choix invalide dans la création.\n");
+            break;
+    }
+}
+
+int main() {
+    int choix;
+
+    while (1) {
+        afficher_menu();
+        scanf("%d", &choix);
+
+        switch (choix) {
+            case 1:
+                creer_forme();
+                break;
+            case 2:
+                printf("Fonction de suppression appelée.\n");
+                break;
+            case 3:
+                printf("Fonction d'affichage appelée.\n");
+                break;
+            case 4:
+                printf("Fonction de modification appelée.\n");
+                break;
+            case 5:
+                printf("Revenir à zéro.\n");
+                break;
+            case 0:
+                printf("Fin du programme.\n");
+                exit(0);
+            default:
+                printf("Choix invalide. Veuillez réessayer.\n");
+        }
+    }
+
+    return 0;
+}

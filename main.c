@@ -32,7 +32,7 @@ int main ( ){
         printf("0- Vouler vous quitter le programme ? ci oui veuillez taper 0 \n " stop);
         scanf("%d", &create_t);
         switch (create_t){
-            case 1, %d == 1:
+            case 1:
                 int create_t(){
                     printf("Vous avez choisi de créer une forme. veuillez donc choisir laquelle ou les-quelles: \n");
                     printf("! - Pour voir le menu des formes \n" );
@@ -59,63 +59,63 @@ int main ( ){
                         if (){
                             scanf(%d );
                             switch(choix_forme){
-                                case 1 == 1:
+                                case 1 :
                                 printf("vous avez choisi de créé un cercle");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 2 == 2:
+                                case 2 :
                                 printf("Vous avez choisi de créé un carré");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 3 == 3:
+                                case 3:
                                 printf("Vous avez choisi de créé un triangle");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 4 == 4:
+                                case 4 :
                                 printf("Vous avez choisi de créé un rectangle");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 5 == 5:
+                                case 5 :
                                 printf("Vous avez choisi de créé une éllipse");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/ellipses.c, char -r);
 
-                                case 6 == 6:
+                                case 6 :
                                 printf("Vous avez choisi de créé une ligne");
                                 FILE *fopen(char /workspaces/projet/forme.c/ligne/ligne.c, char -r);
                                 
-                                case 7 == 7:
+                                case 7 :
                                 printf("Vous avez choisi de créé un une trajéctoire");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/trajéctoire.c, char -r);
 
-                                case 8==8:
+                                case 8:
                                 printf("Vous avez choisi de créé un groupe");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/groupe.c, char -r);
 
-                                case 9==9:
+                                case 9:
                                 printf("Vous avez choisi de créé un pentagone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 10 ==10:
+                                case 10 :
                                 printf("Vous avez choisi de créé un octogone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 11==11:
+                                case 11:
                                 printf("Vous avez choisi de créé un nonagone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 12==12:
+                                case 12:
                                 printf("Vous avez choisi de créé un hexagone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 13==13:
+                                case 13:
                                 printf("Vous avez choisi de créé un heptagone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 14==14:
+                                case 14:
                                 printf("Vous avez choisi de créé un decagone");
                                 FILE *fopen(char /workspaces/projet/forme.c/autre/rond.c, char -r);
 
-                                case 15==15:
+                                case 15:
                                 printf("vous avez choisi de créé un enchainement");
                                 FILE *fopen(char /workspaces/projet/forme.c/ligne/enchainement.c, char -r);
 
@@ -138,7 +138,7 @@ int main ( ){
                 return menu_t;
                 }
                 break;
-            case 2==2:
+            case 2:
                 cut();
                 FILE *f = fopen("visu.html", "w");
                 if (f == NULL) {
@@ -146,7 +146,7 @@ int main ( ){
                     return 1;
                 }
                 break;
-            case 3==3:
+            case 3:
                 view();
                 // Création du fichier HTML
                 FILE *f = fopen("visu.html", "a+");
@@ -155,10 +155,10 @@ int main ( ){
                     return 1;
                 }
                 break;
-            case 4==4:
+            case 4:
                 modif();
                 break;
-            case 5==5:
+            case 5:
                 restart();
                                 // destruction du fichier HTML
                 FILE *f = fopen("visu.html", "w");
@@ -166,7 +166,7 @@ int main ( ){
                     perror("Erreur lors de la création du fichier");
                  }
                 return menu_t;
-            case 6 ==6:
+            case 6 :
                 stop();
                                                // destruction du fichier HTML
                 FILE *f = fopen("visu.html", "w");
