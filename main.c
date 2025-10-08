@@ -21,12 +21,6 @@ typedef struct create_s{
 
 int main ( ){
     int(menu_t);{
-         // Création du fichier HTML
-    FILE *f = fopen("visu.html", "w");
-    if (f == NULL) {
-        perror("Erreur lors de la création du fichier");
-        return 1;
-    }
 
         // Menu
         printf("Bienvenue dans le Menu \n");
@@ -45,7 +39,7 @@ int main ( ){
                     printf(": - Pour revenir au menu principal \n");
                     printf("0 - Pour quitter le programme \n");
                     scanf("%d")
-                while if (!){
+                while if (%d == !){
                         printf("1 - Créer un cercle ? ci oui veuillez taper 1 \n" );
                         printf("2 - Créer un carré ? ci oui veuillez taper 2 \n" );
                         printf("3 - Créer un triangle ? ci oui veuillez taper 3 \n" );
@@ -131,7 +125,7 @@ int main ( ){
                             printf(erreur);
                             exit(0);
                         }
-                else if (:){
+                else if (%d == :){
                     printf("Vous avez choisi de retourner dans le menue de création \n");
                     return create_t
                 }
@@ -146,19 +140,40 @@ int main ( ){
                 break;
             case 2==2:
                 cut();
+                FILE *f = fopen("visu.html", "w");
+                if (f == NULL) {
+                    perror("Erreur lors de la création du fichier");
+                    return 1;
+                }
                 break;
             case 3==3:
                 view();
+                // Création du fichier HTML
+                FILE *f = fopen("visu.html", "a+");
+                 if (f == NULL) {
+                    perror("Erreur lors de la création du fichier");
+                    return 1;
+                }
                 break;
             case 4==4:
                 modif();
                 break;
             case 5==5:
                 restart();
-                cut;
+                                // destruction du fichier HTML
+                FILE *f = fopen("visu.html", "w");
+                 if (f == NULL) {
+                    perror("Erreur lors de la création du fichier");
+                 }
                 return menu_t;
             case 6 ==6:
                 stop();
+                                               // destruction du fichier HTML
+                FILE *f = fopen("visu.html", "w");
+                 if (f == NULL) {
+                    perror("Erreur lors de la création du fichier");
+                 }
+                printf("Fin.")
                 break;
             default:
                 printf("Choix invalide. Veuillez réessayer.\n");
