@@ -2,6 +2,10 @@
     "makefile.configureOnOpen": false,
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "rectangle.h": "c",
+        "cercle.h": "c",
+        "ellipses.h": "c",
+        "carre.h": "c"
     }
 }

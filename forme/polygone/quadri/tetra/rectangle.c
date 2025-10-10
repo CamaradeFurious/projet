@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "rectangle.h"
 
-int main() {
+int rectangle() {
     // Dimensions du réctangle
     int hauteur = 100;
     int largeur = 150;

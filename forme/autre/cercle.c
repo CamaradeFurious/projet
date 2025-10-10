@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include "cercle.h"
 
-int main() {
-    // Dimensions de l'ellipse
-    int largeur = 350;
-    int hauteur = 100;
+int cercle() {
+    // Dimensions du cercle
+    int rayon = 380;
+    int hauteur = 400;
+    int largeur = 400;
+ 
 
     // Création du fichier HTML
     FILE *f = fopen("visu.html", "r");
@@ -14,9 +17,9 @@ int main() {
 
     // Écriture du contenu HTML avec le SVG
     fprintf(f, "<!DOCTYPE html>\n");
-    fprintf(f, "<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title> visu SVG</title>\n</head>\n<body>\n");
+    fprintf(f, "<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>visu SVG</title>\n</head>\n<body>\n");
     fprintf(f, "<svg width=\"%d\" height=\"%d\" xmlns=\"http://www.w3.org/2000/svg\">\n", largeur, hauteur);
-    fprintf(f, "  <ellipse cx=\"%d\" cy=\"%d\" rx=\"%d\" ry=\"%d\" fill=\"blue\" />\n", largeur/2, hauteur/2, largeur/2, hauteur/2);
+    fprintf(f, "  <circle cx=\"%d\" cy=\"%d\" r=\"%d\"  fill=\"#431caeff\" />\n", largeur, hauteur, rayon/2);
     fprintf(f, "</svg>\n");
     fprintf(f, "</body>\n</html>\n");
 

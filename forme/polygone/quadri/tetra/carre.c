@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "carre.h"
 
-int main() {
+int carre() {
     // Dimensions du carré
     int taille = 100;
 

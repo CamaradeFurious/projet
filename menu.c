@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "menu.h"
+#include "forme/autre/cercle.h"
+#include "forme/autre/ellipses.h"
+#include "forme/ligne/ligne.h"
+#include "forme/polygone/quadri/tetra/carre.h"
+#include "forme/polygone/quadri/tetra/rectangle.h"
 
 
 int menu_s() {
@@ -54,11 +59,11 @@ int menu_s() {
                     switch (choix_forme) {
                         case 1:
                             printf("Création d'un cercle\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            cercle();
                             break;
                         case 2:
                             printf("Création d'un carré\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/carré.c", "r");
+                            carre();
                             break;
                         case 3:
                             printf("Création d'un triangle\n");
@@ -66,15 +71,15 @@ int menu_s() {
                             break;
                         case 4:
                             printf("Création d'un rectangle\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rectangle.c", "r");
+                            rectangle();
                             break;
                         case 5:
                             printf("Création d'une ellipse\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/ellipses.c", "r");
+                            ellipse();
                             break;
                         case 6:
                             printf("Création d'une ligne\n");
-                            f = fopen("/workspaces/projet/forme.c/ligne/ligne.c", "r");
+                            ligne();
                             break;
                         case 7:
                             printf("Création d'une trajectoire\n");
