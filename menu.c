@@ -147,15 +147,16 @@ int menu_s() {
                 break;
 
             case 3:
-                f = fopen("visu.html", "a+");
+                f = fopen("visu.html", "r");
                 if (f == NULL) {
                     perror("Erreur lors de l'ouverture du fichier");
                 } else {
-                    printf("Affichage des formes (simulation).\n");
+                    printf("Veuillez télécharger le dossier visu.html puis l'ouvrir sur internet.\n");
                     fclose(f);
                 }
                 break;
-
+            
+                // A FAIRE UNE FOIS PATH ET FORME FINI !!
             case 4:
                 printf("Fonction de modification encore à implémenter.\n");
                 break;
