@@ -58,7 +58,7 @@ int menu_s() {
                             break;
                         case 2:
                             printf("Création d'un carré\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/workspaces/projet/forme.c/autre/carré.c", "r");
                             break;
                         case 3:
                             printf("Création d'un triangle\n");
@@ -66,7 +66,7 @@ int menu_s() {
                             break;
                         case 4:
                             printf("Création d'un rectangle\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/workspaces/projet/forme.c/autre/rectangle.c", "r");
                             break;
                         case 5:
                             printf("Création d'une ellipse\n");
