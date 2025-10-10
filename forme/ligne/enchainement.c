@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "enchainement_h"
 
-int main() {
+int enchainement() {
 
     int hauteur = 1000;
     int largeur = 2;
