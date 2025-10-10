@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "triangle_h"
+#include "triangle.h"
 
 int triangle(){
 

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "traj_h"
+#include "traj.h"
 
 int traj(){
     

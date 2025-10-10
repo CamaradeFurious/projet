@@ -7,6 +7,17 @@
 #include "forme/ligne/ligne.h"
 #include "forme/polygone/quadri/tetra/carre.h"
 #include "forme/polygone/quadri/tetra/rectangle.h"
+#include"forme/autre/groupe.h"
+#include"forme/autre/traj.h"
+#include"forme/ligne/enchainement.h"
+#include"forme/polygone/decagone/decagone.h"
+#include"forme/polygone/heptagone/heptagone.h"
+#include"forme/polygone/hexagone/hexagone.h"
+#include"forme/polygone/nonagone/nonagone.h"
+#include"forme/polygone/octogone/octogone.h"
+#include"forme/polygone/pentagone/pentagone.h"
+#include"forme/polygone/trygone/triangle.h"
+
 
 
 int menu_s() {

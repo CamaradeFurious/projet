@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "pentagone_h"
+#include "pentagone.h"
 
 int pentagone(){
     

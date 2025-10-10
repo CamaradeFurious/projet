@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "decagone_h"
+#include "decagone.h"
 
 int decagone(){
     

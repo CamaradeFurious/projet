@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "heptagone_h"
+#include "heptagone.h"
 
 int heptagone(){
     

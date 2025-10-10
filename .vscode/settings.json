@@ -6,6 +6,8 @@
         "rectangle.h": "c",
         "cercle.h": "c",
         "ellipses.h": "c",
-        "carre.h": "c"
+        "carre.h": "c",
+        "traj.h": "c",
+        "heptagone.h": "c"
     }
 }
