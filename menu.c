@@ -70,63 +70,63 @@ int menu_s() {
                     switch (choix_forme) {
                         case 1:
                             printf("Création d'un cercle\n");
-                            cercle();
+                            cercle("/forme/autre/cercle.c");
                             break;
                         case 2:
                             printf("Création d'un carré\n");
-                            carre();
+                            carre("/forme/polygone/quadri/tetra/carre.c");
                             break;
                         case 3:
                             printf("Création d'un triangle\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/rond.c", "r");
                             break;
                         case 4:
                             printf("Création d'un rectangle\n");
-                            rectangle();
+                            rectangle("/forme/polygone/quadri/tetra/rectangle.c");
                             break;
                         case 5:
                             printf("Création d'une ellipse\n");
-                            ellipse();
+                            ellipse("/forme/autre/ellipse");
                             break;
                         case 6:
                             printf("Création d'une ligne\n");
-                            ligne();
+                            ligne("/forme/ligne/ligne");
                             break;
                         case 7:
                             printf("Création d'une trajectoire\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/trajéctoire.c", "r");
+                            f = fopen("/forme.c/autre/trajéctoire.c", "r");
                             break;
                         case 8:
                             printf("Création d'un groupe\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/groupe.c", "r");
+                            f = fopen("/forme.c/autre/groupe.c", "r");
                             break;
                         case 9:
                             printf("Création d'un pentagone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/pentagone/pentagone.c", "r");
                             break;
                         case 10:
                             printf("Création d'un octogone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/octogone/octogone.c", "r");
                             break;
                         case 11:
                             printf("Création d'un nonagone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/nonagone/nonagone.c", "r");
                             break;
                         case 12:
                             printf("Création d'un hexagone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/hexagone/hexagone.c", "r");
                             break;
                         case 13:
                             printf("Création d'un heptagone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/heptagone/heptagone.c", "r");
                             break;
                         case 14:
                             printf("Création d'un décagone\n");
-                            f = fopen("/workspaces/projet/forme.c/autre/rond.c", "r");
+                            f = fopen("/forme.c/autre/polygone/decagone/decagone.c", "r");
                             break;
                         case 15:
                             printf("Création d'un enchaînement\n");
-                            f = fopen("/workspaces/projet/forme.c/ligne/enchainement.c", "r");
+                            f = fopen("/forme.c/ligne/enchainement.c", "r");
                             break;
                         default:
                             printf("Choix de forme invalide.\n");
