@@ -7,16 +7,10 @@
 #include "forme/ligne/ligne.h"
 #include "forme/polygone/quadri/tetra/carre.h"
 #include "forme/polygone/quadri/tetra/rectangle.h"
-#include"forme/autre/groupe.h"
+#include "forme/polygone/quadri/tetra/polygone.h"
 #include"forme/autre/traj.h"
 #include"forme/ligne/enchainement.h"
-#include"forme/polygone/decagone/decagone.h"
-#include"forme/polygone/heptagone/heptagone.h"
-#include"forme/polygone/hexagone/hexagone.h"
-#include"forme/polygone/nonagone/nonagone.h"
-#include"forme/polygone/octogone/octogone.h"
-#include"forme/polygone/pentagone/pentagone.h"
-#include"forme/polygone/trygone/triangle.h"
+
 
 
 
@@ -57,13 +51,7 @@ int menu_s() {
                     printf("6 - Créer une ligne\n");
                     printf("7 - Créer une trajectoire\n");
                     printf("8 - Créer un groupe\n");
-                    printf("9 - Créer un pentagone\n");
-                    printf("10 - Créer un octogone\n");
-                    printf("11 - Créer un nonagone\n");
-                    printf("12 - Créer un hexagone\n");
-                    printf("13 - Créer un heptagone\n");
-                    printf("14 - Créer un décagone\n");
-                    printf("15 - Créer un enchaînement\n");
+                    printf("9 - Créer un enchaînement\n");
 
                     scanf("%d", &choix_forme);
 
@@ -100,31 +88,8 @@ int menu_s() {
                             printf("Création d'un groupe\n");
                             f = fopen("/forme.c/autre/groupe.c", "r");
                             break;
+
                         case 9:
-                            printf("Création d'un pentagone\n");
-                            f = fopen("/forme.c/autre/polygone/pentagone/pentagone.c", "r");
-                            break;
-                        case 10:
-                            printf("Création d'un octogone\n");
-                            f = fopen("/forme.c/autre/polygone/octogone/octogone.c", "r");
-                            break;
-                        case 11:
-                            printf("Création d'un nonagone\n");
-                            f = fopen("/forme.c/autre/polygone/nonagone/nonagone.c", "r");
-                            break;
-                        case 12:
-                            printf("Création d'un hexagone\n");
-                            f = fopen("/forme.c/autre/polygone/hexagone/hexagone.c", "r");
-                            break;
-                        case 13:
-                            printf("Création d'un heptagone\n");
-                            f = fopen("/forme.c/autre/polygone/heptagone/heptagone.c", "r");
-                            break;
-                        case 14:
-                            printf("Création d'un décagone\n");
-                            f = fopen("/forme.c/autre/polygone/decagone/decagone.c", "r");
-                            break;
-                        case 15:
                             printf("Création d'un enchaînement\n");
                             f = fopen("/forme.c/ligne/enchainement.c", "r");
                             break;
