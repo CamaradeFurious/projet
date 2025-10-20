@@ -5,18 +5,18 @@ int carre() {
         // placement x/y sur la page
     printf("Veuillez préciser ces coordonnés :");
     printf("Ci dessous la valeur X");
-    scanf("%d");
+    scanf("%d", &x);
     int x = ("%d");
     printf("Ci dessous la valeur de Y");
-    scanf("%d");
+    scanf("%d", &y);
     int y =("%d");
     // Dimensions du carré
     printf("veuillez donner la taille du carré ci dessous :");
-    scanf("%d");
+    scanf("%d", &taille);
     int taille = ("%d");
     //couleur
     printf("Ici veuillez indiquer la couleur du carré, attention c'est en hexadécimal, en entrant la référance de la couleur, précéder le de : Ox");
-    scanf("%i");
+    scanf("%i", &colors);
     int colors = ("%i");
 
     // Création du fichier HTML

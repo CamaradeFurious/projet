@@ -10,4 +10,8 @@ int traj(){
     printf("Ci dessous la valeur de Y");
     scanf("%d");
     int y =("%d");
+        //colors
+    printf("Ici veuillez entrer la couleur, attention seul le format hexadécimal préceder de Ox est prit en compte");
+    scanf("%i", &colors);
+    int colors = ("%i");
 }

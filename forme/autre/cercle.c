@@ -5,18 +5,22 @@ int cercle() {
     // placement x/y sur la page
     printf("Veuillez préciser ces coordonnés :");
     printf("Ci dessous la valeur X");
-    scanf("%d");
+    scanf("%d", &x);
     int x = ("%d");
     printf("Ci dessous la valeur de Y");
-    scanf("%d");
+    scanf("%d", &y);
     int y =("%d");
     // Dimensions du cercle
     printf("Maintenant passons à ça taille :");
-    printf("Ici veuillez entrer sont rayons");
-    scanf("%d");
+    printf("Ici veuillez entrer son rayons");
+    scanf("%d",&r ,&h ,&l);
     int r = ("%d");
     int h = ("%d");
     int l = ("%d");
+    //colors
+    printf("Ici veuillez entrer la couleur, attention seul le format hexadécimal préceder de Ox est prit en compte");
+    scanf("%i", &colors);
+    int colors = ("%i");
  
 
     // Création du fichier HTML
@@ -30,7 +34,7 @@ int cercle() {
     fprintf(f, "<!DOCTYPE html>\n");
     fprintf(f, "<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>visu SVG</title>\n</head>\n<body>\n");
     fprintf(f, "<svg width=\"%d\" height=\"%d\" xmlns=\"http://www.w3.org/2000/svg\">\n", l,h );
-    fprintf(f, "  <circle cx=\"%d\" cy=\"%d\" r=\"%d\"  fill=\"#431caeff\" />\n", x, y, r/2);
+    fprintf(f, "  <circle cx=\"%d\" cy=\"%d\" r=\"%d\"  fill=\"%i\" />\n", x, y, r/2, colors);
     fprintf(f, "</svg>\n");
     fprintf(f, "</body>\n</html>\n");
 
