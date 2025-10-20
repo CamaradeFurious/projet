@@ -13,7 +13,7 @@ build:
 	$(CC) $(FLAGS) -c forme/ligne/enchainement.c
 	$(CC) $(FLAGS) -c forme/polygone/quadri/tetra/polygone.c
 
-	$(CC) $(FLAGS) main.o menu.o cercle.o ellipses.o   traj.o enchainement.o  ligne.o polygone.o triangle.o -o bin/main
+	$(CC) $(FLAGS) main.o menu.o cercle.o ellipses.o   traj.o enchainement.o  ligne.o polygone.o carre.o rectangle.o -o bin/main
 
 clean:
 	rm bin/main

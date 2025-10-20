@@ -19,6 +19,7 @@ int menu_s() {
     int choix_forme;
     char create_choice;
     FILE *f;
+    
 
     while (1) {
         // menu principal
@@ -35,23 +36,24 @@ int menu_s() {
         switch (menu) {
             case 1:
                 // Menu forme
-                printf("\nVous avez choisi de créer une forme.\n");
+                printf("-------------------------------------------\n");
+                printf("Vous avez choisi de créer une forme.\n");
                 printf("! - Pour voir le menu des formes\n");
                 printf(": - Pour revenir au menu principal\n");
                 printf("S - Pour quitter le programme\n");
+                printf("-------------------------------------------\n");
 
                 scanf(" %c", &create_choice);  
 
                 if (create_choice == '!') {
+                    printf("---------------------------\n");
+                    printf("Voici le Menu de création :\n");
                     printf("1 - Créer un cercle\n");
                     printf("2 - Créer un carré\n");
-                    printf("3 - Créer un triangle\n");
-                    printf("4 - Créer un rectangle\n");
-                    printf("5 - Créer une ellipse\n");
-                    printf("6 - Créer une ligne\n");
-                    printf("7 - Créer une trajectoire\n");
-                    printf("8 - Créer un groupe\n");
-                    printf("9 - Créer un enchaînement\n");
+                    printf("3 - Créer un rectangle\n");
+                    printf("4 - Créer une ellipse\n");
+                    printf("5 - Créer une ligne\n");
+                    printf("---------------------------\n");
 
                     scanf("%d", &choix_forme);
 
@@ -65,33 +67,16 @@ int menu_s() {
                             carre("/forme/polygone/quadri/tetra/carre.c");
                             break;
                         case 3:
-                            printf("Création d'un triangle\n");
-                            f = fopen("/forme.c/autre/rond.c", "r");
-                            break;
-                        case 4:
                             printf("Création d'un rectangle\n");
                             rectangle("/forme/polygone/quadri/tetra/rectangle.c");
                             break;
-                        case 5:
+                        case 4:
                             printf("Création d'une ellipse\n");
                             ellipse("/forme/autre/ellipse");
                             break;
-                        case 6:
+                        case 5:
                             printf("Création d'une ligne\n");
                             ligne("/forme/ligne/ligne");
-                            break;
-                        case 7:
-                            printf("Création d'une trajectoire\n");
-                            f = fopen("/forme.c/autre/trajéctoire.c", "r");
-                            break;
-                        case 8:
-                            printf("Création d'un groupe\n");
-                            f = fopen("/forme.c/autre/groupe.c", "r");
-                            break;
-
-                        case 9:
-                            printf("Création d'un enchaînement\n");
-                            f = fopen("/forme.c/ligne/enchainement.c", "r");
                             break;
                         default:
                             printf("Choix de forme invalide.\n");

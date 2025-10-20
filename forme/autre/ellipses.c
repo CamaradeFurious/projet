@@ -3,25 +3,25 @@
 
 int ellipse() {
     // placement x/y sur la page
-    printf("Veuillez préciser ces coordonnés :");
-    printf("Ci dessous la valeur X");
+    printf("Veuillez préciser ces coordonnés :\n");
+    printf("Ci dessous la valeur X\n");
+    int x;
     scanf("%d", &x);
-    int x = ("%d");
-    printf("Ci dessous la valeur de Y");
+    printf("Ci dessous la valeur de Y\n");
+    int y;
     scanf("%d", &y);
-    int y =("%d");
     // Dimensions de l'ellipse
-    printf("Ici, veuillez donner la taille de votre ellipse :");
-    printf("En premier ça largeur :");
+    printf("Ici, veuillez donner la taille de votre ellipse :\n");
+    printf("En premier ça largeur :\n");
+    int largeur;
     scanf("%d", &largeur);
-    int largeur = "%d";
-    printf("Ici, ça hauteur");
+    printf("Ici, ça hauteur\n");
+    int hauteur ;
     scanf("%d", &hauteur);
-    int hauteur = "%d";
         //colors
-    printf("Ici veuillez entrer la couleur, attention seul le format hexadécimal préceder de Ox est prit en compte");
+    printf("Ici veuillez entrer la couleur, attention seul le format hexadécimal préceder de Ox est prit en compte\n");
+    int colors;
     scanf("%i", &colors);
-    int colors = ("%i");
 
     // Création du fichier HTML
     FILE *f = fopen("visu.html", "r");

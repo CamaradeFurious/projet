@@ -3,21 +3,21 @@
 
 int carre() {
         // placement x/y sur la page
-    printf("Veuillez préciser ces coordonnés :");
-    printf("Ci dessous la valeur X");
+    printf("Veuillez préciser ces coordonnés :\n");
+    printf("Ci dessous la valeur X\n");
+    int x;
     scanf("%d", &x);
-    int x = ("%d");
-    printf("Ci dessous la valeur de Y");
+    printf("Ci dessous la valeur de Y\n");
+    int y ;
     scanf("%d", &y);
-    int y =("%d");
     // Dimensions du carré
-    printf("veuillez donner la taille du carré ci dessous :");
+    printf("veuillez donner la taille du carré ci dessous :\n");
+    int taille;
     scanf("%d", &taille);
-    int taille = ("%d");
     //couleur
-    printf("Ici veuillez indiquer la couleur du carré, attention c'est en hexadécimal, en entrant la référance de la couleur, précéder le de : Ox");
+    printf("Ici veuillez indiquer la couleur du carré, attention c'est en hexadécimal, en entrant la référance de la couleur, précéder le de : Ox\n");
+    int colors;
     scanf("%i", &colors);
-    int colors = ("%i");
 
     // Création du fichier HTML
     FILE *f = fopen("visu.html", "r");
@@ -30,7 +30,7 @@ int carre() {
     fprintf(f, "<!DOCTYPE html>\n");
     fprintf(f, "<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>visu SVG</title>\n</head>\n<body>\n");
     fprintf(f, "<svg width=\"%d\" height=\"%d\" xmlns=\"http://www.w3.org/2000/svg\">\n", taille, taille);
-    fprintf(f, "  <rect x=\"%d\" y=\"%d\" width=\"%d\" height=\"%d\" fill=\"%i\" />\n", x, r, taille, taille, colors);
+    fprintf(f, "  <rect x=\"x\" y=\"y\" width=\"%d\" height=\"%d\" fill=\"%i\" />\n", taille, taille, colors);
     fprintf(f, "</svg>\n");
     fprintf(f, "</body>\n</html>\n");
 

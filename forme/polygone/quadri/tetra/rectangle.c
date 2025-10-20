@@ -3,26 +3,26 @@
 
 int rectangle() {
         // placement x/y sur la page
-    printf("Veuillez préciser ces coordonnés :");
-    printf("Ci dessous la valeur X");
-    scanf("%d");
-    int x = ("%d");
-    printf("Ci dessous la valeur de Y");
-    scanf("%d");
-    int y =("%d");
+    printf("Veuillez préciser ces coordonnés :\n");
+    printf("Ci dessous la valeur X\n");
+    int x;
+    scanf("%d", &x);
+    printf("Ci dessous la valeur de Y\n");
+    int y;
+    scanf("%d", &y);
     // Dimensions du réctangle
-    printf("veuillez donner les dimensions du rectangle");
-    printf('Ci-dessous la hauteur :');
-    scanf("%d");
-    int hauteur = ("%d");
-    printf('Ci-dessous la largeur :');
-    scanf("%d");
-    int largeur = ("%d");
+    printf("veuillez donner les dimensions du rectangle\n");
+    printf("Ci-dessous la hauteur :\n");
+    int hauteur;
+    scanf("%d", &hauteur);
+    printf("Ci-dessous la largeur :\n");
+    int largeur;
+    scanf("%d", &largeur);
 
     //couleur
-    printf("Ici veuillez indiquer la couleur du carré, attention c'est en hexadécimal, en entrant la référance de la couleur, précéder le de : Ox");
-    scanf("%i");
-    int colors = ("%i");
+    printf("Ici veuillez indiquer la couleur du carré, attention c'est en hexadécimal, en entrant la référance de la couleur, précéder le de : Ox\n");
+    int colors;
+    scanf("%i", &colors);
 
     // Création du fichier HTML
     FILE *f = fopen("visu.html", "r");

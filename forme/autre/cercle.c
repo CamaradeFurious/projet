@@ -5,22 +5,24 @@ int cercle() {
     // placement x/y sur la page
     printf("Veuillez préciser ces coordonnés :");
     printf("Ci dessous la valeur X");
+    int x;
     scanf("%d", &x);
-    int x = ("%d");
     printf("Ci dessous la valeur de Y");
+    int y;
     scanf("%d", &y);
-    int y =("%d");
     // Dimensions du cercle
     printf("Maintenant passons à ça taille :");
     printf("Ici veuillez entrer son rayons");
-    scanf("%d",&r ,&h ,&l);
-    int r = ("%d");
-    int h = ("%d");
-    int l = ("%d");
+    int r ;
+     scanf("%d", &r);
+    int h ;
+     scanf("%d", &h);
+    int l ;
+    scanf("%d", &l);
     //colors
     printf("Ici veuillez entrer la couleur, attention seul le format hexadécimal préceder de Ox est prit en compte");
+    int colors;
     scanf("%i", &colors);
-    int colors = ("%i");
  
 
     // Création du fichier HTML
