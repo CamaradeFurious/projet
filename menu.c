@@ -8,21 +8,16 @@
 #include "forme/polygone/quadri/tetra/carre.h"
 #include "forme/polygone/quadri/tetra/rectangle.h"
 #include "forme/polygone/quadri/tetra/polygone.h"
-#include"forme/autre/traj.h"
-#include"forme/ligne/enchainement.h"
-
-
-
+#include "forme/autre/traj.h"
+#include "forme/ligne/enchainement.h"
 
 int menu_s() {
     int menu;
     int choix_forme;
     char create_choice;
     FILE *f;
-    
 
     while (1) {
-        // menu principal
         printf("\nBienvenue dans le Menu\n");
         printf("1- Créer une forme ? Si oui tapez 1\n");
         printf("2- Voulez-vous supprimer les formes ? Si oui tapez 2\n");
@@ -35,7 +30,6 @@ int menu_s() {
 
         switch (menu) {
             case 1:
-                // Menu forme
                 printf("-------------------------------------------\n");
                 printf("Vous avez choisi de créer une forme.\n");
                 printf("! - Pour voir le menu des formes\n");
@@ -43,7 +37,7 @@ int menu_s() {
                 printf("S - Pour quitter le programme\n");
                 printf("-------------------------------------------\n");
 
-                scanf(" %c", &create_choice);  
+                scanf(" %c", &create_choice);
 
                 if (create_choice == '!') {
                     printf("---------------------------\n");
@@ -53,6 +47,7 @@ int menu_s() {
                     printf("3 - Créer un rectangle\n");
                     printf("4 - Créer une ellipse\n");
                     printf("5 - Créer une ligne\n");
+                    printf("6 - Créer un polygone\n");
                     printf("---------------------------\n");
 
                     scanf("%d", &choix_forme);
@@ -72,21 +67,26 @@ int menu_s() {
                             break;
                         case 4:
                             printf("Création d'une ellipse\n");
-                            ellipse("/forme/autre/ellipse");
+                            ellipse("/forme/autre/ellipses.c");
                             break;
                         case 5:
                             printf("Création d'une ligne\n");
-                            ligne("/forme/ligne/ligne");
+                            ligne("/forme/ligne/ligne.c");
+                            break;
+                        case 6:
+                            printf("Création d'un polygone\n");
+                            polygone("/forme/polygone/quadri/tetra/polygone.c");
                             break;
                         default:
                             printf("Choix de forme invalide.\n");
-                            continue; 
+                            continue;
                     }
 
+                    f = fopen("visu.html", "a");
                     if (f == NULL) {
                         perror("Erreur d'ouverture du fichier");
                     } else {
-                        printf("Fichier ouvert avec succès (simulation).\n");
+                        printf("Fichier mis à jour avec succès (simulation).\n");
                         fclose(f);
                     }
 
@@ -117,14 +117,49 @@ int menu_s() {
                 if (f == NULL) {
                     perror("Erreur lors de l'ouverture du fichier");
                 } else {
-                    printf("Veuillez télécharger le dossier visu.html puis l'ouvrir sur internet.\n");
+                    printf("Veuillez télécharger le fichier visu.html puis l'ouvrir dans un navigateur.\n");
                     fclose(f);
                 }
                 break;
-            
-                // A FAIRE UNE FOIS PATH ET FORME FINI !!
+
             case 4:
-                printf("Fonction de modification encore à implémenter.\n");
+                printf("---------------------------------\n");
+                printf("Menu de modification des formes :\n");
+                printf("1 - Modifier un cercle\n");
+                printf("2 - Modifier un carré\n");
+                printf("3 - Modifier un rectangle\n");
+                printf("4 - Modifier une ellipse\n");
+                printf("5 - Modifier une ligne\n");
+                printf("---------------------------------\n");
+
+                /*scanf("%d", &choix_forme);
+
+                switch (choix_forme) {
+                    case 1:
+                        printf("Modification d'un cercle\n");
+                        modif_cercle("/forme/autre/cercle.c");
+                        break;
+                    case 2:
+                        printf("Modification d'un carré\n");
+                        modif_carre("/forme/polygone/quadri/tetra/carre.c");
+                        break;
+                    case 3:
+                        printf("Modification d'un rectangle\n");
+                        modif_rectangle("/forme/polygone/quadri/tetra/rectangle.c");
+                        break;
+                    case 4:
+                        printf("Modification d'une ellipse\n");
+                        modif_ellipse("/forme/autre/ellipses.c");
+                        break;
+                    case 5:
+                        printf("Modification d'une ligne\n");
+                        modif_ligne("/forme/ligne/ligne.c");
+                        break;
+                    default:
+                        printf("Choix invalide.\n");
+                        break;
+                }*/
+
                 break;
 
             case 5:
